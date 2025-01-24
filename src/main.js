@@ -1,6 +1,7 @@
 import axios from "axios";
 import "./styles/styles.css";
 const apikey = import.meta.env.VITE_OMDB_API_KEY;
+console.log(apikey);
 $(document).ready(() => {
   $("#searchForm").on("submit", (e) => {
     // console.log($("searchText").val());
