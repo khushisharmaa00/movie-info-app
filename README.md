@@ -1,9 +1,13 @@
 
 
 **Movie Info App 🎬**
+
+
 A user-friendly web application that allows users to search for movies, view detailed information, and explore trending movies. Built using modern web technologies for an interactive experience.
 
 **Features 🌟**
+
+
 🔍 Search for Movies: Find detailed information about any movie using its title.
 📊 Trending Movies: Explore the most popular and trending movies.
 🎥 Movie Details: View detailed information like cast, genre, ratings, release date, and synopsis.
