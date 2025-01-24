@@ -1,4 +1,6 @@
 import axios from "axios";
+import $ from "jquery";
+
 import "./styles/styles.css";
 const apikey = import.meta.env.VITE_OMDB_API_KEY;
 console.log(apikey);
@@ -44,6 +46,7 @@ async function getMovies(searchText) {
     console.log(err);
   }
 }
+console.log("Loaded API Key:", import.meta.env.VITE_OMDB_API_KEY);
 
 window.movieSelected = function (id) {
   sessionStorage.setItem("movieId", id);
