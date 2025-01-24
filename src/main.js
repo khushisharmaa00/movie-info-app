@@ -12,11 +12,11 @@ $(document).ready(() => {
 });
 
 async function getMovies(searchText) {
-  //   console.log(searchText);
   try {
     const response = await axios.get(
       `https://www.omdbapi.com/?apikey=${apikey}&s=${searchText}`
     );
+    $("#loading").hide();
     const movies = response.data.Search;
     if (!movies) {
       $("#movies").html(
@@ -61,7 +61,7 @@ window.getMovie = function () {
     return;
   }
   axios
-    .get(`https://www.omdbapi.com/?apikey=${apikey}&i=` + movieId)
+    .get(`https://www.omdbapi.com/?apikey=${apikey}&i=${movieId}`)
     .then((response) => {
       //   console.log(response);
       const movie = response.data;
